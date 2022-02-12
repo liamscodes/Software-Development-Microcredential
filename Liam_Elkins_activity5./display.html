@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Display result from form</title>
+  </head>
+  <body>
+    <h1>Hello There! <span id="display_name"></span></h1>
+    <a href="forms.html">BACK TO FORMS</a>
+    <script type="text/javascript">
+      let d =
+      document.querySelector('#display_name');
+      d.innerHTML = localStorage.getItem('fullName');
+
+    </script>
+  </body>
+
+</html>
